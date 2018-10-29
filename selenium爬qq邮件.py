@@ -1,8 +1,6 @@
 #!/usr/bin/env python 
 # -*- coding:utf-8 -*-
-"""
-1. 根据课堂上demo05_爬QQ邮件，实现其翻页获取所有邮件的功能。
-"""
+
 import time,os
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -32,8 +30,8 @@ wd.switch_to.frame(login_frame)  # 切换到框架内
 switcher_plogin = wd.find_element_by_id('switcher_plogin')
 switcher_plogin.click()
 
-QQ = "619246759"
-PASSWORD = "zx19930322103x"
+QQ = "QQ账号"
+PASSWORD = "****QQ密码*****"
 wd.find_element_by_id('u').send_keys(QQ)
 wd.find_element_by_id('p').send_keys(PASSWORD)
 wd.find_element_by_id('login_button').click()
